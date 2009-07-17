@@ -1,7 +1,17 @@
 # ===========================================================================
-# Copyright 2005, Everitz Consulting (mt@everitz.com)
+# A Movable Type plugin to provide a table of contents by date.
+# Copyright 2005 Everitz Consulting <everitz.com>.
 #
-# Licensed under the Open Software License version 2.1
+# This program is free software:  You may redistribute it and/or modify it
+# it under the terms of the Artistic License version 2 as published by the
+# Open Source Initiative.
+#
+# This program is distributed in the hope that it will be useful but does
+# NOT INCLUDE ANY WARRANTY; Without even the implied warranty of FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+# You should have received a copy of the Artistic License with this program.
+# If not, see <http://www.opensource.org/licenses/artistic-license-2.0.php>.
 # ===========================================================================
 package MT::Plugin::EntryDates;
 
@@ -13,13 +23,13 @@ use MT::Entry;
 
 # version
 use vars qw($VERSION);
-$VERSION = '0.2.4';
+$VERSION = '0.2.5';
 
 my $about = {
   name => 'MT-DateContents',
-  description => 'Provides a table of contents by dates.',
+  description => 'Provide a table of contents by date.',
   author_name => 'Everitz Consulting',
-  author_link => 'http://www.everitz.com/',
+  author_link => 'http://everitz.com/',
   version => $VERSION,
 }; 
 MT->add_plugin(new MT::Plugin($about));
